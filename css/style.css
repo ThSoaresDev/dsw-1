@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
+ 
 *{
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@
     --lightBlack: #06131b;
     --yellow: #ffbf01;
 }
-
+ 
 body{
     color: var(--dark);
     color: var(--darkBlue2);
@@ -43,7 +43,7 @@ body{
     width: 100%;
     background: var(--offWhite);
     transition: all 0.5s;
-    position: fixed;
+    position: relative;
     top: 0;
     z-index: 1;
 }
@@ -96,33 +96,32 @@ body{
 .menu bar:nth-child(3){
     background: var(--red);
 }
-
+ 
 .home-img img{
     width: 220px;
     height: 220px;
     border-radius: 60%;
-    margin-right: 10px;
     margin-top: 40px;
 }
-
+ 
 .home-content {
     display: flex;
     align-items: center;
     padding: 10px;
 }
-
+ 
 .content {
     padding: 10px;
 }
-
+ 
 .list-skills{
     margin-left: 20px;
 }
-
+ 
 .content-skill{
     line-height: 35px;
 }
-
+ 
 .home-profile {
     display: flex;
     flex-direction: column;
@@ -130,17 +129,12 @@ body{
     justify-content: center;
     margin-right: 20px;
 }
-
+ 
 .portfolio-content{
     display: flex;
-    flex-direction: row;
-    /* justify-content: center; */
-    max-width: 1000px;
-    margin: 0px auto;
-    margin-top: 100px;
-    /* gap: 200px; */
+    flex-direction: column;
 }
-
+ 
 .home {
     display: flex;
     flex-direction: row;
@@ -173,24 +167,16 @@ body{
     align-items: center;
     text-align: justify;
 }
-
+ 
 .social-media i{
     font-size: 35px;
     color:#0c316b;
 }
-
-.portfolio-sections{
-    margin-left: 200px;
-
-}
+ 
 .portfolio-picture{
-    border-right: 2px solid #0c316b;
-    position: fixed;
-    left: 0;
-    margin-left: 300px;
-    height: 87vh;
+    border-bottom: 2px solid #0c316b;
 }
-
+ 
 @media (max-width: 785px) {
 .portfolio-content{
     flex-direction: column;
@@ -198,6 +184,7 @@ body{
 }
 .navigation{
     padding: 18px 20px;
+    position: fixed;
 }
 .menu{
     display: block;
@@ -221,7 +208,7 @@ transition: 0.3s;
 }
 .nav-item{
     margin: 16px 0;
-    
+ 
 }
 /* main */
 .home{
@@ -230,6 +217,7 @@ transition: 0.3s;
     text-align: center;
     overflow: hidden;
     gap: 5rem;
+ 
 }
 .home .text-h4{
     font-size: 15px;
@@ -244,12 +232,14 @@ font-size: 15px;
 .home-img{
 width: 100%;
 }
+.home-profile{
+    margin-top: 100px;
+}
 .portfolio-picture{
     flex-direction: column;
     border-radius: 2px solid #0c316b;
-    position: fixed;
     left: 0;
-    margin-left: 300px;
     height: 87vh;
+    margin-bottom: -100px;
 }
 }
